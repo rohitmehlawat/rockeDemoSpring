@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+    "type":"object",
+    "properties":{
+        "txnno":{"type":"string","maxLength":16},
+        "txndate":{"type":"string"},
+        "txnGMTdate":{"type":"string"},
+        "txntypeid":{"type":"string"},
+        "currency":{"$ref":"file:src/main/resources/static/currency.json"},
+        "sender":{"$ref":"file:src/main/resources/static/sender.json"},
+        "receiver":{"$ref":"file:src/main/resources/static/receiver.json"},
+        "charges":{"$ref":"file:src/main/resources/static/charges.json"},
+        "othertxnInfo":{"$ref":"file:src/main/resources/static/othertxnInfo.json"}
+    },
+    "required":["txnno","txndate","txnGMTdate","txntypeid","currency","sender","receiver","charges","othertxnInfo"]
+
+
+}
+
+
+
+

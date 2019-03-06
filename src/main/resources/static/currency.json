@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"properties": {
+		"lc": {
+			"type": "string",
+			"maxLength": 3
+		},
+		"fc": {
+			"type": "string",
+			"maxLength": 3
+		}
+	}
+}

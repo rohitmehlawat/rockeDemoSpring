@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type":"object",
+    "properties":{
+        "chequeno":{"type":"string","maxLength":20},
+        "chequedate":{"type":"string"},
+        "bankname":{"type":"string","maxLength":60},
+        "partyname":{"type":"string","maxLength":60},
+        "chequeamount":{
+            "type":"string",
+            "pattern":"^[+-]?\\d+\\.?\\d{0,3}$"
+        }
+    }
+}

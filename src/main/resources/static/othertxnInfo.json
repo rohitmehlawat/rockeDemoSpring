@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type":"object",
+    "properties":{
+        "cheque":{
+            "type":"array",
+            "items":{"$ref":"file:src/main/resources/static/cheque.json"}
+        },
+        "customerstatus":{
+            "type":"string",
+            "pattern": "^[0-9]+$"
+        },
+        "customertype":{
+            "type":"string",
+            "pattern": "^[0-9]+$"
+        },
+        "customerfirstname":{"type":"string","maxLength":60}
+    }
+}

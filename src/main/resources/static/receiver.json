@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type":"object",
+    "properties":{
+        "receiverid":{
+            "type":"string",
+            "pattern": "^[0-9]+$"
+        },
+        "receiverdescription":{"type":"string","maxLength":100},
+        "agentcodeto":{"type":"string","maxLength":12},
+        "cashiercodeto":{"type":"string","maxLength":16}
+    }
+}

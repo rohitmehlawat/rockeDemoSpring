@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type":"object",
+    "properties":{
+        "senderid":{
+            "type":"string",
+            "pattern": "^[0-9]+$"
+        },
+        "senderdescription":{"type":"string","maxLength":100},
+        "agentcode":{"type":"string","maxLength":12},
+        "customerno":{"type":"string","maxLength":16},
+        "casherid":{"type":"string","maxLength":16}
+    }
+}
